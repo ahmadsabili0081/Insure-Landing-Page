@@ -1,0 +1,123 @@
+header.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  padding: 1.5%;
+  background-color: var(--color-white);
+  transition: 0.5s ease;
+}
+
+header.headerSticky {
+  position: fixed;
+  top: 0;
+  padding: 1%;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+  transition: 0.5s;
+}
+
+.container__header {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+a {
+  letter-spacing: 1.5px;
+  font-family: 'Karla', sans-serif;
+}
+
+@media screen and (max-width:570px) {
+  header.header {
+    width: 100%;
+    padding: 4% 2%;
+  }
+
+  header.sticky {
+    padding: 4% 2%;
+    border: 2px solid red;
+  }
+
+  .container__header {
+    width: 100%;
+  }
+
+  .container__header .hamburger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+  }
+
+  .span {
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #000;
+    transition: 0.5s;
+  }
+
+  .hamburgerStyle .span:first-child {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .hamburgerStyle .span:nth-child(2) {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+
+  .hamburgerStyle .span:last-child {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  nav.navbar {
+    display: flex;
+    width: 70%;
+    min-height: 100vh;
+    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    min-height: 100vh;
+  }
+
+  nav.navbarMobile {
+    right: 0;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+  }
+
+  ul {
+    width: 100%;
+    height: 50vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    margin: 30px 0px;
+  }
+}
