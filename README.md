@@ -1,6 +1,6 @@
 # Frontend Mentor - Insure-Landing-Page
 
-![Design preview for the Easy-Bank-Landing coding challenge](../src/assets/desktop-preview.jpg)
+![Design preview for the Easy-Bank-Landing coding challenge](./src/assets/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -16,6 +16,7 @@ Thanks for checking out this front-end coding challenge.
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
+- classnames
 
 
 
